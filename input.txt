@@ -1,1 +1,19 @@
--
+a : int;
+b : int;
+c : int;
+p : bool;
+begin
+    a = 0x1010;
+    b = 0x0110;
+    p = any a;
+    if p then
+        begin
+            c = a and b;
+        end
+    else
+        begin
+            c = a or b;
+        end;
+    c = not c;
+end
+&
